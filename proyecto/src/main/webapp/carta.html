@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .fondo {
+            position: relative;
+            padding-top: 60px;
+        }
+   header {
+            background: rgba(0,0,0,0.7);
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+
+        nav {
+        float: left;
+        }
+
+        nav ul {
+        list-style: none;
+        overflow: hidden; 
+        }
+
+        nav ul li {
+        float: left;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        }
+        nav ul li a {
+        display: block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        }
+        nav ul li:hover {
+        background: #eca023;
+        }
+ .wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column-2.carta{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.plato-carta{
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+}
+
+.img-plato-carta{
+  display: flex;
+  flex-basis: 25%;
+  justify-content: center;
+}
+
+.img-plato-carta img{
+  max-width: 100px;
+  max-height: 75px;
+}
+
+.title-plato-carta{
+  border: 1px solid #e5e5e5;
+  border-bottom: none;
+  border-top: none;
+  flex-basis: 60%;
+  padding: 0 1rem;
+}
+
+.precio-plato-carta{
+  display: flex;
+  flex-basis: 15%;
+  justify-content: center;
+  font-weight: bold;
+}
+@media (max-width:680px){
+  .column-2.carta{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+</style>
+<body>
+  <header>
+    <nav>
+        <ul>
+        <li><a href="inicio.jsp">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="carta.html">Carta</a></l>
+        <li><a href="reserva.jsp">Reserva</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#" id="cerrarSesionLink">Cerrar Sesi&oacute;n</a></li>
+     </ul>
+    </nav>
+</header>
+
+  <section class="wrap fondo">
+    <div class="wrap-title-section">
+      <h2>Platos variados</h2>
+    </div>
+    <div class="wrap column-2 carta">
+      <div class="plato-carta">
+        <div class="img-plato-carta">
+          <img src="./img/alitas.jpg" alt="">
+        </div>
+        <div class="title-plato-carta">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="precio-plato-carta">
+          <span>9€</span>
+        </div>
+      </div>
+      <div class="plato-carta">
+        <div class="img-plato-carta">
+          <img src="./img/bocadillo.jpg" alt="">
+        </div>
+        <div class="title-plato-carta">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="precio-plato-carta">
+          <span>9€</span>
+        </div>
+      </div> 
+      <div class="plato-carta">
+        <div class="img-plato-carta">
+          <img src="./img/sushi.jpg" alt="">
+        </div>
+        <div class="title-plato-carta">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="precio-plato-carta">
+          <span>9€</span>
+        </div>
+      </div>
+      <div class="plato-carta">
+        <div class="img-plato-carta">
+          <img src="./img/sopa.jpg" alt="">
+        </div>
+        <div class="title-plato-carta">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="precio-plato-carta">
+          <span>9€</span>
+        </div>
+      </div>    
+    </div>
+    <div class="wrap-title-section">
+      <h2>Pizzas</h2>
+    </div>
+    <div class="wrap column-2 carta">
+      <div class="plato-carta">
+        <div class="img-plato-carta">
+          <img src="./img/pizza.jpg" alt="">
+        </div>
+        <div class="title-plato-carta">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="precio-plato-carta">
+          <span>9€</span>
+        </div>
+      </div>
+      <div class="plato-carta">
+        <div class="img-plato-carta">
+          <img src="./img/pizza1.jpg" alt="">
+        </div>
+        <div class="title-plato-carta">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="precio-plato-carta">
+          <span>9€</span>
+        </div>
+      </div> 
+      <div class="plato-carta">
+        <div class="img-plato-carta">
+          <img src="./img/pizza2.jpg" alt="">
+        </div>
+        <div class="title-plato-carta">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="precio-plato-carta">
+          <span>9€</span>
+        </div>
+      </div>
+      <div class="plato-carta">
+        <div class="img-plato-carta">
+          <img src="./img/pizza3.jpeg" alt="">
+        </div>
+        <div class="title-plato-carta">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="precio-plato-carta">
+          <span>9€</span>
+        </div>
+      </div>   
+    </div>
+    <div class="wrap-title-section">
+      <h2>Hamburguesas</h2>
+    </div>
+    <div class="wrap column-2 carta">
+      <div class="plato-carta">
+        <div class="img-plato-carta">
+          <img src="./img/hamburguesa.jpg" alt="">
+        </div>
+        <div class="title-plato-carta">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="precio-plato-carta">
+          <span>9€</span>
+        </div>
+      </div>
+      <div class="plato-carta">
+        <div class="img-plato-carta">
+          <img src="./img/hamburguesa1.jpg" alt="">
+        </div>
+        <div class="title-plato-carta">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="precio-plato-carta">
+          <span>9€</span>
+        </div>
+      </div> 
+      <div class="plato-carta">
+        <div class="img-plato-carta">
+          <img src="./img/hamburguesa2.jpg" alt="">
+        </div>
+        <div class="title-plato-carta">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="precio-plato-carta">
+          <span>9€</span>
+        </div>
+      </div>
+      <div class="plato-carta">
+        <div class="img-plato-carta">
+          <img src="./img/hamburguesa3.jpg" alt="">
+        </div>
+        <div class="title-plato-carta">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="precio-plato-carta">
+          <span>9€</span>
+        </div>
+      </div>   
+    </div>
+  </section>
+</body>
+</html>
+<script>
+  function borrarTodasLasCookies() {
+  var cookies = document.cookie.split(";"); // Obtener todas las cookies
+  for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i];
+      var igualPos = cookie.indexOf("="); // Encontrar el índice del signo igual
+      var nombre = igualPos > -1 ? cookie.substr(0, igualPos) : cookie; // Obtener el nombre de la cookie
+      document.cookie = nombre + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; // Configurar la fecha de expiración en el pasado
+  }
+}
+
+function cerrarSesion() {
+ 
+  borrarTodasLasCookies(); // Borra todas las cookies
+  // Aquí puedes redirigir al usuario a la página de inicio de sesión u otra página deseada
+  window.location.href = "index.html"; // Redirige a la página de inicio de sesión
+}
+
+document.getElementById("cerrarSesionLink").addEventListener("click", cerrarSesion);
+</script>
