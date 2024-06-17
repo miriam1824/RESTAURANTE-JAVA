@@ -16,3 +16,4 @@ public class CerrarSesion {
         response.sendRedirect("index.html"); // Redirigir al usuario a la página de inicio de sesión u otra página relevante
     }
 }
+
