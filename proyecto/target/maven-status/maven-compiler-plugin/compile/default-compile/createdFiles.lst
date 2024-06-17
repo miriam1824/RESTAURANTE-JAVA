@@ -1,9 +1,9 @@
 proyecto\Reserva.class
 proyecto\Inicio.class
-proyecto\Login.class
 proyecto\dto\Usuario.class
 proyecto\ConexionRegistro.class
 proyecto\dto\VerReserva.class
+proyecto\ConexionLogin.class
 proyecto\Conexion.class
 proyecto\ConexionReserva.class
 proyecto\Registro.class

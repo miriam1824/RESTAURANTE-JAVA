@@ -245,15 +245,18 @@ hr {
                 <div id="login">
                     <form id="loginform" action="Inicio" method="post">
                         <label for="usuario">Usuario</label>
-                        <input id="usuario" type="text" name="usuario" placeholder="Alias" required>
+                        <input id="usuario" type="text" name="usuario" placeholder="Alias">
                         
                         <label for="password">Contraseña</label>
-                        <input id="password" type="password" placeholder="Contraseña" name="password" required>
+                        <input id="password" type="password" placeholder="Contraseña" name="password">
                         
                         <button type="submit" title="Ingresar" name="Ingresar">Login</button>
                     </form>
-                    <div id="mensajeError" style="display: none; color: red;">
+                    <div id="mensajeError" style="display: none; color: darkred;padding-top: 20px">
                         Nombre de usuario o contraseña incorrectos.
+                    </div>
+                    <div id="mensaje" style="display: none; color: darkred;padding-top: 20px;padding-left:30px">
+                        Rellene todos los campos
                     </div>
                 </div>
                 <div id="derecho">
@@ -279,11 +282,19 @@ hr {
             if (error === 'incorrecto') {
                 // Mostrar el mensaje de error
                 mostrarMensajeError();
+            }else if (error === 'vacio'){
+                mostrarMensaje();
             }
     };
     function mostrarMensajeError() {
         // Obtener el elemento del mensaje de error
         var mensajeError = document.getElementById("mensajeError");
+        // Mostrar el mensaje de error
+        mensajeError.style.display = "block";
+    }
+    function mostrarMensaje() {
+        // Obtener el elemento del mensaje de error
+        var mensajeError = document.getElementById("mensaje");
         // Mostrar el mensaje de error
         mensajeError.style.display = "block";
     }

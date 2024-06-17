@@ -180,10 +180,10 @@
                         <div id="mensajeVacio" style="display: none; color: red;padding-left:25%;">
                             Rellene todos los campos
                         </div>
-                        <div id="mensajeError" style="display: none; color: red;padding-left: 50px;">
+                        <div id="mensajeError" style="display: none; color: red;padding-left: 20px;">
                             La fecha tiene que ser igual o superior a la actual
                         </div>
-                        <div id="mensaje" style="display: none; color: green;padding-left: 20px;">
+                        <div id="mensaje" style="display: none; color: green;padding-left: 15%;">
                             La reserva ha sido a&ntildeadida con exito.
                         </div>
                     </form>

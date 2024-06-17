@@ -24,9 +24,12 @@ public class Inicio extends HttpServlet{
         Usuario usuario2 = new Usuario();
         usuario2.setUsuario(nombre);
         usuario2.setPassword(contrasena);
-        Login login = new Login();
+        ConexionLogin login = new ConexionLogin();
         Usuario usu = login.obtenerUsuario(usuario2);
-        if (usu != null) {
+
+        if(nombre == "" || nombre == null || contrasena == "" || contrasena == null){
+            resp.sendRedirect("./index.html?error=vacio");
+        }else if (usu != null) {
             Cookie objCookie = new Cookie ("id",usu.getUsuario());
             resp.addCookie(objCookie);
             resp.sendRedirect("./inicio.jsp");
@@ -34,8 +37,6 @@ public class Inicio extends HttpServlet{
 		} else {
             resp.sendRedirect("./index.html?error=incorrecto");
         }
-       
-      
     }
 
 }
